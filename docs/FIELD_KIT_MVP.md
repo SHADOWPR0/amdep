@@ -25,6 +25,19 @@ It is not a hosted SaaS deployment and it is not meant to be handed to a contrac
 - Writeback privileges.
 - Frontier AI API key.
 
+## Install Posture
+
+This is a technical handoff kit, not a consumer app store install.
+
+An FDE, internal IT lead, ops analyst, or reasonably technical project-controls person should be able to unzip it, confirm Python 3.11+, run the launcher, and walk the operating team through the browser UI.
+
+If Python is missing, the launchers stop with a plain install message. The recommended path is to install Python from `python.org`, then rerun:
+
+- macOS: `run_field_kit.command`
+- Windows: `run_field_kit.bat`
+
+For a customer-owned environment, IT should approve the machine, Python install, package install from `requirements.txt`, and the copied-export workflow before any real customer data is used.
+
 ## Workflow Modes
 
 ### Analogue / spreadsheet shop

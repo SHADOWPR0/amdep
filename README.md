@@ -160,6 +160,8 @@ For a Kyle-facing explanation of the sample data, model/optimizer layer, economi
 
 For the local, FDE-led intake pilot package, see [docs/FIELD_KIT_MVP.md](docs/FIELD_KIT_MVP.md) and [docs/FIELD_KIT_MODEL_CARD.md](docs/FIELD_KIT_MODEL_CARD.md).
 
+The Field Kit is intended for an FDE, internal IT lead, ops analyst, or reasonably technical project-controls person to install first. It does not require a frontier AI API key, but it does require Python 3.11+ and a first-run dependency install from `requirements.txt`.
+
 ## What It Does Not Prove
 
 This repository uses randomized commercial GC staffing data. Modeled impact is directional until validated against historical assignments, schedules, outcomes, overrides, and job-cost records.

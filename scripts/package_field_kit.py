@@ -84,6 +84,16 @@ def write_package_readme() -> None:
 
 Local read-only staffing intake and audit package.
 
+## Who Should Install It
+
+This is a technical handoff kit, not an app store install. An FDE, internal IT lead, ops analyst, or reasonably technical project-controls person should run the first install.
+
+The kit needs:
+
+- Python 3.11 or newer.
+- Internet access for the first dependency install, unless IT preloads the Python packages.
+- Permission to create a local `.venv` folder inside the unzipped package.
+
 ## macOS
 
 Double-click `run_field_kit.command`, or run:
@@ -95,6 +105,18 @@ Double-click `run_field_kit.command`, or run:
 ## Windows
 
 Double-click `run_field_kit.bat`.
+
+If Python is missing, install Python from:
+
+```text
+https://www.python.org/downloads/windows/
+```
+
+During install, check "Add python.exe to PATH" if shown.
+
+## If It Does Not Start
+
+If the launcher stops on a company machine, IT may need to approve Python, the local `.venv` folder, or package installation from `requirements.txt`.
 
 ## Browser
 
