@@ -5,10 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#171b20">
   <title>AMDEP Project Staff Command Center</title>
+  <script>
+    (() => {
+      const canonicalVersion = "identity-20260530c";
+      const url = new URL(window.location.href);
+      if (url.searchParams.get("v") !== canonicalVersion) {
+        url.searchParams.set("v", canonicalVersion);
+        window.location.replace(url.toString());
+      }
+    })();
+  </script>
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="icon" href="./assets/amdep-mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="./styles.css?v=win95-20260530b">
+  <link rel="stylesheet" href="./styles.css?v=identity-20260530c">
 </head>
 <body>
   <div class="app-shell">
@@ -268,6 +278,6 @@
     </main>
   </div>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
-  <script src="./app.js?v=win95-20260530b" defer></script>
+  <script src="./app.js?v=identity-20260530c" defer></script>
 </body>
 </html>
