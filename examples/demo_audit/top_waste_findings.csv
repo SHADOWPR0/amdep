@@ -1,0 +1,84 @@
+assignment_id,jobsite_id,job_name,assigned_personnel,assigned_worker,assigned_commute_minutes,closer_qualified_worker,closer_qualified_name,closer_commute_minutes,avoidable_minutes_one_way,estimated_dollars_per_day,annualized_cost,optimized_reassignment,reason
+N-20260518-0069,J019,Naples Restoration 19,P050,Luke Hughes,143.4,P039,Jack Romero,10.4,133.1,341.52,85381.09,P027,Drove 143 minutes despite a qualified worker within 10 minutes.
+N-20260518-0074,J044,Naples Utilities 44,P134,Nate Foster,130.8,P174,Mia Sullivan,8.6,122.2,313.73,78432.24,P128,Drove 131 minutes despite a qualified worker within 9 minutes.
+N-20260518-0045,J028,Naples Roofing 28,P029,Jack Hayes,133.4,P022,Grace Sullivan,21.0,112.4,288.54,72136.25,P047,Drove 133 minutes despite a qualified worker within 21 minutes.
+N-20260518-0049,J049,Bonita Springs / Estero Telecom/Fiber 49,P083,Troy Foster,112.0,P054,Ava Romero,11.7,100.3,257.55,64387.47,P054,Drove 112 minutes despite a qualified worker within 12 minutes.
+N-20260518-0092,J055,Cape Coral Utilities 55,P006,Cole Foster,88.6,P003,Grant Hayes,6.7,82.0,210.41,52602.39,P003,Drove 89 minutes despite a qualified worker within 7 minutes.
+N-20260518-0079,J035,Lehigh Acres / Immokalee Electrical 35,P008,Luke Hughes,91.9,P132,Reed Carter,12.3,79.6,204.27,51067.08,P132,Drove 92 minutes despite a qualified worker within 12 minutes.
+N-20260518-0110,J013,Cape Coral Commercial Construction 13,P023,June Hayes,98.4,P170,Nora Miller,22.4,76.0,194.96,48740.42,P009,Drove 98 minutes despite a qualified worker within 22 minutes.
+N-20260518-0046,J045,Fort Myers Commercial Construction 45,P037,Nora Walker,86.8,P096,Reed Bennett,12.0,74.8,192.04,48009.28,P035,Drove 87 minutes despite a qualified worker within 12 minutes.
+N-20260518-0102,J027,Punta Gorda / Sarasota Commercial Construction 27,P051,Brooke Hughes,155.6,P081,Carmen Sullivan,82.4,73.2,187.84,46959.81,,Drove 156 minutes despite a qualified worker within 82 minutes.
+N-20260518-0122,J047,Naples Utilities 47,P036,Mia Walker,81.9,P126,Wyatt Hughes,9.3,72.6,186.23,46556.63,P126,Drove 82 minutes despite a qualified worker within 9 minutes.
+N-20260518-0041,J034,Naples Industrial Services 34,P081,Carmen Sullivan,79.3,P128,Troy Foster,7.8,71.5,183.6,45899.5,P133,Drove 79 minutes despite a qualified worker within 8 minutes.
+N-20260518-0030,J002,Punta Gorda / Sarasota Telecom/Fiber 02,P120,Brooke Sullivan,146.3,P053,June Miller,76.3,70.0,179.6,44899.75,,Drove 146 minutes despite a qualified worker within 76 minutes.
+N-20260518-0037,J006,Cape Coral Commercial Construction 06,P047,Grace Walker,80.9,P183,Nate Price,11.4,69.5,178.41,44601.47,P122,Drove 81 minutes despite a qualified worker within 11 minutes.
+N-20260518-0026,J054,Cape Coral Hvac 54,P199,Cole Carter,87.0,P175,Troy Miller,18.5,68.4,175.58,43895.24,P175,Drove 87 minutes despite a qualified worker within 19 minutes.
+N-20260518-0084,J051,Fort Myers Restoration 51,P123,Nora Sullivan,74.9,P035,Brooke Sullivan,7.2,67.7,173.65,43411.8,P053,Drove 75 minutes despite a qualified worker within 7 minutes.
+N-20260518-0025,J054,Cape Coral Hvac 54,P099,Lena Morgan,85.6,P175,Troy Miller,18.5,67.1,172.17,43041.83,P175,Drove 86 minutes despite a qualified worker within 19 minutes.
+N-20260518-0073,J044,Naples Utilities 44,P155,Dylan Nelson,75.1,P174,Mia Sullivan,8.6,66.5,170.79,42697.82,P128,Drove 75 minutes despite a qualified worker within 9 minutes.
+N-20260518-0125,J039,Punta Gorda / Sarasota Utilities 39,P031,Quinn Nelson,73.2,P006,Cole Foster,6.8,66.4,170.47,42617.57,P006,Drove 73 minutes despite a qualified worker within 7 minutes.
+N-20260518-0018,J016,Fort Myers Roofing 16,P032,Riley Carter,75.6,P113,Mia Sullivan,9.6,66.0,169.39,42347.83,P192,Drove 76 minutes despite a qualified worker within 10 minutes.
+N-20260518-0038,J006,Cape Coral Commercial Construction 06,P128,Troy Foster,75.8,P183,Nate Price,11.4,64.5,165.47,41367.47,P122,Drove 76 minutes despite a qualified worker within 11 minutes.
+N-20260518-0106,J031,Fort Myers Restoration 31,P171,Grant Sullivan,72.7,P118,Riley Romero,9.7,63.1,161.91,40477.74,P118,Drove 73 minutes despite a qualified worker within 10 minutes.
+N-20260518-0078,J035,Lehigh Acres / Immokalee Electrical 35,P151,Cole Hughes,75.0,P132,Reed Carter,12.3,62.7,160.97,40242.16,P132,Drove 75 minutes despite a qualified worker within 12 minutes.
+N-20260518-0112,J046,Punta Gorda / Sarasota Electrical 46,P169,Nate Foster,76.8,P171,Grant Sullivan,14.5,62.3,159.79,39948.71,,Drove 77 minutes despite a qualified worker within 15 minutes.
+N-20260518-0109,J010,Cape Coral Commercial Construction 10,P143,Grace Torres,73.5,P155,Dylan Nelson,12.9,60.6,155.6,38899.86,P187,Drove 74 minutes despite a qualified worker within 13 minutes.
+N-20260518-0088,J053,Cape Coral Hvac 53,P039,Jack Romero,69.7,P175,Troy Miller,9.1,60.6,155.42,38855.12,,Drove 70 minutes despite a qualified worker within 9 minutes.
+N-20260518-0052,J012,Bonita Springs / Estero Roofing 12,P045,Reed Hayes,68.5,P103,Mia Diaz,8.3,60.2,154.54,38634.1,P181,Drove 68 minutes despite a qualified worker within 8 minutes.
+N-20260518-0117,J026,Cape Coral Telecom/Fiber 26,P026,Grant Sullivan,72.3,P076,Cole Sullivan,12.9,59.4,152.49,38121.26,P076,Drove 72 minutes despite a qualified worker within 13 minutes.
+N-20260518-0027,J009,Fort Myers Hvac 09,P065,June Sullivan,76.5,P168,Troy Diaz,18.0,58.5,150.14,37535.13,P157,Drove 76 minutes despite a qualified worker within 18 minutes.
+N-20260518-0010,J038,Fort Myers Telecom/Fiber 38,P055,Grace Bennett,67.2,P035,Brooke Sullivan,8.8,58.3,149.76,37439.87,P052,Drove 67 minutes despite a qualified worker within 9 minutes.
+N-20260518-0056,J030,Fort Myers Restoration 30,P195,Quinn Bennett,73.6,P158,Ava Reyes,18.8,54.8,140.73,35183.36,P158,Drove 74 minutes despite a qualified worker within 19 minutes.
+N-20260518-0058,J023,Fort Myers Hvac 23,P094,Dylan Nelson,63.9,P024,Mason Romero,9.6,54.3,139.32,34830.04,P024,Drove 64 minutes despite a qualified worker within 10 minutes.
+N-20260518-0012,J015,Punta Gorda / Sarasota Commercial Construction 15,P168,Troy Diaz,65.5,P119,Riley Miller,11.5,54.0,138.51,34626.55,P119,Drove 65 minutes despite a qualified worker within 12 minutes.
+N-20260518-0081,J041,Fort Myers Restoration 41,P150,Grant Nelson,63.3,P063,Wyatt Carter,9.4,53.9,138.23,34556.81,P167,Drove 63 minutes despite a qualified worker within 9 minutes.
+N-20260518-0095,J003,Fort Myers Hvac 03,P034,Jack Reyes,62.8,P156,Reed Romero,11.8,51.0,130.88,32720.89,P106,Drove 63 minutes despite a qualified worker within 12 minutes.
+N-20260518-0085,J053,Cape Coral Hvac 53,P188,Cole Nelson,59.6,P175,Troy Miller,9.1,50.5,129.68,32419.2,,Drove 60 minutes despite a qualified worker within 9 minutes.
+N-20260518-0057,J023,Fort Myers Hvac 23,P161,Carmen Hughes,59.2,P024,Mason Romero,9.6,49.6,127.39,31846.29,P024,Drove 59 minutes despite a qualified worker within 10 minutes.
+N-20260518-0059,J042,Fort Myers Hvac 42,P088,Cole Bennett,60.3,P005,Luke Miller,12.0,48.3,123.84,30960.53,P063,Drove 60 minutes despite a qualified worker within 12 minutes.
+N-20260518-0105,J008,Cape Coral Commercial Construction 08,P012,Grace Carter,64.8,P175,Troy Miller,17.0,47.8,122.81,30702.97,,Drove 65 minutes despite a qualified worker within 17 minutes.
+N-20260518-0111,J013,Cape Coral Commercial Construction 13,P016,Nora Hayes,69.0,P170,Nora Miller,22.4,46.6,119.5,29875.42,P009,Drove 69 minutes despite a qualified worker within 22 minutes.
+N-20260518-0009,J040,Punta Gorda / Sarasota Commercial Construction 40,P130,Lena Romero,132.2,P112,Grace Romero,86.0,46.2,118.57,29641.66,,Drove 132 minutes despite a qualified worker within 86 minutes.
+N-20260518-0083,J017,Lehigh Acres / Immokalee Industrial Services 17,P137,Riley Brooks,57.5,P036,Mia Walker,11.5,46.0,117.94,29485.42,P135,Drove 57 minutes despite a qualified worker within 12 minutes.
+N-20260518-0115,J026,Cape Coral Telecom/Fiber 26,P197,Grace Diaz,58.4,P076,Cole Sullivan,12.9,45.5,116.78,29195.68,P076,Drove 58 minutes despite a qualified worker within 13 minutes.
+N-20260518-0093,J055,Cape Coral Utilities 55,P136,Ava Bennett,51.4,P003,Grant Hayes,6.7,44.7,114.83,28706.72,P003,Drove 51 minutes despite a qualified worker within 7 minutes.
+N-20260518-0121,J047,Naples Utilities 47,P068,Jack Morgan,53.6,P126,Wyatt Hughes,9.3,44.3,113.59,28397.47,P126,Drove 54 minutes despite a qualified worker within 9 minutes.
+N-20260518-0072,J029,Fort Myers Roofing 29,P049,Grace Price,51.4,P081,Carmen Sullivan,8.4,43.0,110.33,27582.2,,Drove 51 minutes despite a qualified worker within 8 minutes.
+N-20260518-0090,J021,Cape Coral Commercial Construction 21,P015,Troy Torres,55.0,P170,Nora Miller,13.2,41.8,107.27,26817.61,P170,Drove 55 minutes despite a qualified worker within 13 minutes.
+N-20260518-0103,J011,Cape Coral Commercial Construction 11,P181,Ava Walker,51.2,P009,Carmen Brooks,9.6,41.7,106.97,26742.29,P005,Drove 51 minutes despite a qualified worker within 10 minutes.
+N-20260518-0108,J010,Cape Coral Commercial Construction 10,P111,Nora Torres,53.4,P155,Dylan Nelson,12.9,40.5,103.91,25976.7,P187,Drove 53 minutes despite a qualified worker within 13 minutes.
+N-20260518-0067,J043,Bonita Springs / Estero Electrical 43,P179,Mason Bennett,49.1,P177,Lena Brooks,10.2,38.9,99.97,24992.12,P177,Drove 49 minutes despite a qualified worker within 10 minutes.
+N-20260518-0034,J033,Bonita Springs / Estero Restoration 33,P003,Grant Hayes,53.6,P166,Ava Torres,16.2,37.4,95.91,23976.54,P103,Drove 54 minutes despite a qualified worker within 16 minutes.
+N-20260518-0076,J052,Bonita Springs / Estero Electrical 52,P198,Dylan Bennett,53.0,P046,Dylan Morgan,16.1,36.9,94.59,23647.5,,Drove 53 minutes despite a qualified worker within 16 minutes.
+N-20260518-0068,J043,Bonita Springs / Estero Electrical 43,P165,Reed Brooks,44.8,P177,Lena Brooks,10.2,34.6,88.78,22194.45,P177,Drove 45 minutes despite a qualified worker within 10 minutes.
+N-20260518-0004,J001,Lehigh Acres / Immokalee Hvac 01,P187,Lena Carter,50.5,P131,Wyatt Morgan,16.6,34.0,87.24,21810.94,P131,Drove 51 minutes despite a qualified worker within 17 minutes.
+N-20260518-0065,J004,Naples Industrial Services 04,P194,Riley Morgan,40.3,P141,Brooke Foster,8.4,31.9,81.85,20463.34,P141,Drove 40 minutes despite a qualified worker within 8 minutes.
+N-20260518-0096,J025,Bonita Springs / Estero Utilities 25,P040,June Carter,39.6,P034,Jack Reyes,9.1,30.5,78.32,19580.57,,Drove 40 minutes despite a qualified worker within 9 minutes.
+N-20260518-0051,J012,Bonita Springs / Estero Roofing 12,P044,June Bennett,36.7,P103,Mia Diaz,8.3,28.4,72.87,18216.26,P181,Drove 37 minutes despite a qualified worker within 8 minutes.
+N-20260518-0042,J032,Bonita Springs / Estero Restoration 32,P116,Troy Miller,43.8,P152,Reed Torres,17.3,26.5,68.02,17005.31,P152,Drove 44 minutes despite a qualified worker within 17 minutes.
+N-20260518-0001,J005,Fort Myers Roofing 05,P105,Nate Diaz,34.9,P025,Nora Miller,9.0,25.9,66.53,16632.95,P025,Drove 35 minutes despite a qualified worker within 9 minutes.
+N-20260518-0100,J037,Cape Coral Roofing 37,P025,Nora Miller,36.1,P109,Troy Sullivan,12.3,23.8,61.1,15275.51,P109,Drove 36 minutes despite a qualified worker within 12 minutes.
+N-20260518-0050,J049,Bonita Springs / Estero Telecom/Fiber 49,P052,Grace Miller,35.4,P054,Ava Romero,11.7,23.7,60.84,15210.14,P054,Drove 35 minutes despite a qualified worker within 12 minutes.
+N-20260518-0101,J027,Punta Gorda / Sarasota Commercial Construction 27,P043,Nora Brooks,106.0,P081,Carmen Sullivan,82.4,23.6,60.48,15120.31,,Drove 106 minutes despite a qualified worker within 82 minutes.
+N-20260518-0002,J005,Fort Myers Roofing 05,P109,Troy Sullivan,32.5,P025,Nora Miller,9.0,23.5,60.29,15073.7,P025,Drove 32 minutes despite a qualified worker within 9 minutes.
+N-20260518-0039,J034,Naples Industrial Services 34,P022,Grace Sullivan,29.8,P128,Troy Foster,7.8,22.0,56.55,14137.0,P133,Drove 30 minutes despite a qualified worker within 8 minutes.
+N-20260518-0089,J021,Cape Coral Commercial Construction 21,P147,Ava Reyes,33.8,P170,Nora Miller,13.2,20.6,52.86,13214.28,P170,Drove 34 minutes despite a qualified worker within 13 minutes.
+N-20260518-0077,J052,Bonita Springs / Estero Electrical 52,P144,Cole Reyes,34.4,P046,Dylan Morgan,16.1,18.2,46.77,11693.25,,Drove 34 minutes despite a qualified worker within 16 minutes.
+N-20260518-0075,J048,Naples Telecom/Fiber 48,P018,Quinn Torres,28.1,P111,Nora Torres,9.9,18.2,46.7,11674.87,P195,Drove 28 minutes despite a qualified worker within 10 minutes.
+N-20260518-0015,J015,Punta Gorda / Sarasota Commercial Construction 15,P110,Carmen Morgan,29.3,P119,Riley Miller,11.5,17.8,45.72,11430.3,P119,Drove 29 minutes despite a qualified worker within 12 minutes.
+N-20260518-0066,J014,Fort Myers Restoration 14,P108,Lena Sullivan,34.0,P192,Riley Reyes,16.5,17.5,44.85,11212.66,P105,Drove 34 minutes despite a qualified worker within 17 minutes.
+N-20260518-0116,J026,Cape Coral Telecom/Fiber 26,P115,Riley Carter,30.4,P076,Cole Sullivan,12.9,17.5,44.81,11203.34,P076,Drove 30 minutes despite a qualified worker within 13 minutes.
+N-20260518-0070,J029,Fort Myers Roofing 29,P138,Ava Diaz,25.6,P081,Carmen Sullivan,8.4,17.3,44.29,11072.11,,Drove 26 minutes despite a qualified worker within 8 minutes.
+N-20260518-0063,J024,Naples Utilities 24,P021,Riley Foster,33.6,P034,Jack Reyes,16.7,17.0,43.52,10879.35,P032,Drove 34 minutes despite a qualified worker within 17 minutes.
+N-20260518-0035,J033,Bonita Springs / Estero Restoration 33,P174,Mia Sullivan,33.0,P166,Ava Torres,16.2,16.8,43.16,10790.29,P103,Drove 33 minutes despite a qualified worker within 16 minutes.
+N-20260518-0082,J041,Fort Myers Restoration 41,P091,Jack Torres,24.2,P063,Wyatt Carter,9.4,14.8,37.87,9467.65,P167,Drove 24 minutes despite a qualified worker within 9 minutes.
+N-20260518-0023,J022,Cape Coral Telecom/Fiber 22,P013,Riley Price,25.4,P187,Lena Carter,11.2,14.2,36.53,9131.58,P112,Drove 25 minutes despite a qualified worker within 11 minutes.
+N-20260518-0062,J024,Naples Utilities 24,P097,Dylan Carter,29.6,P034,Jack Reyes,16.7,12.9,33.05,8261.35,P032,Drove 30 minutes despite a qualified worker within 17 minutes.
+N-20260518-0091,J021,Cape Coral Commercial Construction 21,P162,Mia Bennett,26.1,P170,Nora Miller,13.2,12.9,33.04,8260.61,P170,Drove 26 minutes despite a qualified worker within 13 minutes.
+N-20260518-0099,J037,Cape Coral Roofing 37,P053,June Miller,25.1,P109,Troy Sullivan,12.3,12.7,32.71,8178.68,P109,Drove 25 minutes despite a qualified worker within 12 minutes.
+N-20260518-0048,J045,Fort Myers Commercial Construction 45,P035,Brooke Sullivan,24.5,P096,Reed Bennett,12.0,12.5,32.01,8001.37,P035,Drove 24 minutes despite a qualified worker within 12 minutes.
+N-20260518-0119,J050,Cape Coral Electrical 50,P019,Grace Miller,89.8,P038,Mia Walker,84.9,4.9,12.65,3161.42,,Drove 90 minutes despite a qualified worker within 85 minutes.
+N-20260518-0007,J040,Punta Gorda / Sarasota Commercial Construction 40,P087,Lena Reyes,89.9,P112,Grace Romero,86.0,3.9,10.05,2511.99,,Drove 90 minutes despite a qualified worker within 86 minutes.
+N-20260518-0029,J002,Punta Gorda / Sarasota Telecom/Fiber 02,P106,Jack Carter,79.9,P053,June Miller,76.3,3.6,9.25,2312.33,,Drove 80 minutes despite a qualified worker within 76 minutes.
+N-20260518-0120,J050,Cape Coral Electrical 50,P145,Jack Miller,86.1,P038,Mia Walker,84.9,1.2,3.1,774.42,,Drove 86 minutes despite a qualified worker within 85 minutes.
+N-20260518-0008,J040,Punta Gorda / Sarasota Commercial Construction 40,P090,Troy Torres,73.5,P112,Grace Romero,86.0,0.0,0.0,0.0,,Drove 74 minutes despite a qualified worker within 86 minutes.

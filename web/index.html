@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#171b20">
+  <title>AMDEP Project Staff Command Center</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./assets/amdep-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="./styles.css?v=win95-20260530b">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#overview" aria-label="AMDEP overview">
+        <img src="./assets/amdep-mark.svg" alt="" width="34" height="34">
+        <span>
+          <strong>AMDEP</strong>
+          <small>Staff Deployment Review</small>
+        </span>
+      </a>
+      <div class="status-strip" aria-label="Demo status">
+        <span class="status-pill warning">Synthetic GC portfolio</span>
+        <span class="status-pill">No login required</span>
+        <span class="status-pill" id="syncStatus">Loading portfolio</span>
+      </div>
+    </header>
+
+    <main>
+      <nav class="tabs" aria-label="Demo sections">
+        <a class="tab is-active" href="#overview" data-section-link="overview">Before / After</a>
+        <a class="tab" href="#recommendations" data-section-link="recommendations">Review Queue</a>
+        <a class="tab" href="#mobile" data-section-link="mobile">Field View</a>
+        <a class="tab" href="#exports" data-section-link="exports">Exports</a>
+      </nav>
+
+      <section class="workspace" id="overview" data-section>
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Portfolio staffing review</p>
+            <h1>Put the staff plan on the same page as the work plan.</h1>
+            <p class="section-copy">AMDEP reviews a synthetic commercial GC staffing packet the way a project executive would: active work, WIP exposure, phase coverage, PM and superintendent load, lookahead constraints, trade coordination, OSHA 30 and fall-protection coverage, QA/QC, punch, closeout, cost-to-complete risk, and value leakage from ad hoc personnel deployment.</p>
+          </div>
+          <div class="confidence-panel" aria-label="Assignment analysis status">
+            <span>Assignment analysis</span>
+            <strong id="brainSignal">Ready</strong>
+            <small id="brainCaption">Synthetic portfolio loaded</small>
+          </div>
+        </div>
+
+        <section class="analysis-board" aria-labelledby="analysisTitle">
+          <div class="analysis-head">
+            <div>
+              <p class="eyebrow">Before / after</p>
+              <h2 id="analysisTitle">Current setup vs. ML-reviewed staffing plan</h2>
+            </div>
+            <button class="primary-button" id="runAnalysisButton" type="button">Run ML staffing review</button>
+          </div>
+
+          <div class="before-after-grid">
+            <article class="scenario-card before-card">
+              <span class="scenario-status danger">Current setup</span>
+              <h3>Imported staff plan</h3>
+              <div class="scenario-metrics">
+                <div>
+                  <span>Travel load</span>
+                  <strong id="baselineHours">--</strong>
+                  <small>project-team travel hours per day</small>
+                </div>
+                <div>
+              <span>Deployment conflicts</span>
+              <strong id="conflictCount">--</strong>
+                  <small>region, role-fit, phase, lookahead, safety, or cert drag</small>
+                </div>
+                <div>
+              <span>Coverage gaps</span>
+              <strong id="coverageGaps">--</strong>
+                  <small>missing PM, PE, superintendent, OSHA/safety, QA/QC, or closeout support</small>
+                </div>
+              </div>
+            </article>
+
+            <article class="scenario-card after-card" id="afterScenario">
+              <span class="analysis-lock">Run review to reveal</span>
+              <span class="scenario-status good">Go-forward plan</span>
+              <h3>ML decisions ready for operations approval</h3>
+              <div class="scenario-metrics">
+                <div>
+                  <span>Travel load</span>
+                  <strong id="optimizedHours">--</strong>
+                  <small>after phase, OSHA/safety, certification, and capacity checks</small>
+                </div>
+                <div>
+                  <span>Recovered leadership capacity</span>
+                  <strong id="deltaHours">--</strong>
+                  <small>PM and superintendent capacity returned per day</small>
+                </div>
+                <div>
+                  <span>Fully covered projects</span>
+                  <strong id="staffedPct">--</strong>
+                  <small id="staffedCaption">Waiting for staffing packet</small>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="impact-strip" id="impactStrip" aria-label="Modeled impact after analysis">
+            <div class="impact-item money">
+              <span>Midcase 18-month value leakage reduced</span>
+              <strong id="annualSavings">--</strong>
+              <small>modeled organizational waste avoided by implementing approved ML decisions</small>
+            </div>
+            <div class="impact-item">
+              <span>Moves to approve</span>
+              <strong id="reviewQueueCount">--</strong>
+              <small>staffing changes held for PM / ops approval</small>
+            </div>
+            <div class="impact-item">
+              <span>Profit leverage</span>
+              <strong id="profitLeverage">--</strong>
+              <small>run-rate vs. peer-group pre-tax income proxy</small>
+            </div>
+          </div>
+          <p class="impact-note">Peer-group scale: regional commercial GC / CM portfolio, roughly 50-300 full-time employees and $100M-$700M annual revenue. Annualized value-protection run-rate: <strong id="grossOpportunity">--</strong>. The 18-month horizon covers active work plus the next staffing cycle across retention, rehiring, ramp-up, management capacity, phase coverage, role fit, PM/superintendent burden, travel load, safety controls, QA/QC, punch, closeout, admin bandwidth, project-controls drag, and cost-to-complete movement.</p>
+          <div class="leak-grid" id="leakGrid" aria-label="Modeled deployment leak components"></div>
+        </section>
+
+        <div class="overview-grid">
+          <section class="panel route-panel" aria-labelledby="routeMapTitle">
+            <div class="panel-head">
+              <div>
+                <p class="eyebrow">SWFL command map</p>
+                <h2 id="routeMapTitle">Long-haul staff conflicts and go-forward coverage</h2>
+              </div>
+              <span id="wasteCount" class="count-badge">-- findings</span>
+            </div>
+            <div class="route-visual" id="routeVisual" aria-label="Route waste visualization"></div>
+          </section>
+
+          <section class="panel" aria-labelledby="mlTitle">
+            <div class="panel-head">
+              <div>
+              <p class="eyebrow">Recommendation drivers</p>
+                <h2 id="mlTitle">What moved the staffing plan</h2>
+              </div>
+            </div>
+            <div class="signal-stack" id="weightSignals"></div>
+          </section>
+        </div>
+
+        <section class="panel" aria-labelledby="operationsTitle">
+          <div class="panel-head">
+            <div>
+                <p class="eyebrow">Operations exceptions</p>
+              <h2 id="operationsTitle">What project leadership reviews before the next staffing meeting</h2>
+            </div>
+          </div>
+          <div class="ops-grid">
+            <div class="ops-block">
+              <span>Project coverage</span>
+              <strong id="coverageSummary">--</strong>
+              <small>fully covered projects in the portfolio</small>
+            </div>
+            <div class="ops-block">
+              <span>Burden watchlist</span>
+              <strong id="burdenCount">--</strong>
+              <small>project-team members carrying elevated travel, workload, or variance risk</small>
+            </div>
+            <div class="ops-block">
+              <span>Closeout / QA support</span>
+              <strong id="verificationSummary">--</strong>
+              <small>capture candidates for inspection readiness, punch, and turnover proof</small>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="workspace is-hidden" id="recommendations" data-section>
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Operations review queue</p>
+            <h1>Recommended moves awaiting operations review.</h1>
+          </div>
+          <div class="queue-summary" aria-label="Decision summary">
+            <span><strong id="approvedCount">0</strong> approved</span>
+            <span><strong id="rejectedCount">0</strong> rejected</span>
+            <span><strong id="reviewCount">0</strong> needs review</span>
+          </div>
+        </div>
+        <div class="decision-toolbar">
+          <button class="filter-button is-active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="pending">Pending</button>
+          <button class="filter-button" type="button" data-filter="approved">Approved</button>
+          <button class="filter-button" type="button" data-filter="review">Needs review</button>
+        </div>
+        <div class="recommendation-list" id="recommendationList"></div>
+      </section>
+
+      <section class="workspace is-hidden" id="mobile" data-section>
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Field review</p>
+            <h1>Built for a phone in the trailer, truck, or jobsite office.</h1>
+          </div>
+        </div>
+        <div class="mobile-demo-grid">
+          <div class="phone-frame" aria-label="Mobile assignment preview">
+            <div class="phone-status">
+              <span>AMDEP</span>
+              <span>Today</span>
+            </div>
+            <div class="phone-body" id="mobilePreview"></div>
+          </div>
+          <section class="panel mobile-copy" aria-labelledby="mobileWhyTitle">
+            <p class="eyebrow">Field-safe workflow</p>
+            <h2 id="mobileWhyTitle">Only the assignment, reason, and required action.</h2>
+            <p>Superintendents and project leaders see the project, recommended person, constraint proof, and the action needed from operations.</p>
+            <ul class="check-list">
+              <li>Works in any modern browser on Android, iOS, macOS, Windows, ChromeOS, and tablets.</li>
+              <li>Installable as a PWA for demos and pilots.</li>
+              <li>Production sync would stay server-backed with approval history and audit logs.</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+
+      <section class="workspace is-hidden" id="exports" data-section>
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">System of record safe</p>
+            <h1>Review first. Export second.</h1>
+          </div>
+        </div>
+        <section class="panel" aria-labelledby="exportsTitle">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Adapter-ready outputs</p>
+              <h2 id="exportsTitle">Files your team can inspect, route, or import</h2>
+            </div>
+          </div>
+          <div class="export-grid" id="exportGrid"></div>
+        </section>
+        <section class="panel lineage-panel" aria-labelledby="lineageTitle">
+          <p class="eyebrow">Lineage</p>
+          <h2 id="lineageTitle">Data lineage and approval path</h2>
+          <div class="lineage">
+            <span>CSV inputs</span>
+            <span>Schema validation</span>
+            <span>Risk scoring</span>
+            <span>Constrained optimizer</span>
+            <span>Operations approval</span>
+            <span>Export payloads</span>
+          </div>
+        </section>
+        <section class="panel note-panel" aria-labelledby="notesTitle">
+          <div>
+            <p class="eyebrow">Demo notes</p>
+            <h2 id="notesTitle">Synthetic portfolio, audit-ready workflow.</h2>
+            <p>This demo uses randomized commercial GC staffing data. Economic impact is directional until validated against historical assignments, schedules, outcomes, overrides, and job-cost records.</p>
+          </div>
+          <div class="note-actions">
+            <a class="quiet-button" href="../docs/DEMO_METHODOLOGY_AND_DEPLOYMENT.md" target="_blank" rel="noreferrer">Methodology brief</a>
+            <button class="quiet-button" id="refreshButton" type="button">Reload demo packet</button>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+  <script src="./app.js?v=win95-20260530b" defer></script>
+</body>
+</html>

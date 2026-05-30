@@ -1,0 +1,80 @@
+objectTypes:
+  Personnel:
+    primaryKey: personnel_id
+    properties:
+      personnel_id: string
+      name: string
+      home_region: string
+      home_lat: double
+      home_lon: double
+      skills: string
+      certifications: string
+      supervisor_id: string
+      crew_id: string
+      active: boolean
+  Jobsite:
+    primaryKey: jobsite_id
+    properties:
+      jobsite_id: string
+      name: string
+      region: string
+      lat: double
+      lon: double
+      required_headcount: integer
+      required_skills: string
+      required_certifications: string
+      urgency: integer
+      status: string
+  DeploymentAssignment:
+    primaryKey: assignment_id
+    properties:
+      assignment_id: string
+      deployment_date: date
+      assignment_source: string
+      personnel_id: string
+      jobsite_id: string
+      commute_minutes: double
+      skill_match_score: double
+      certification_match_score: double
+      total_cost_score: double
+  DeploymentRecommendation:
+    primaryKey: recommendation_id
+    properties:
+      recommendation_id: string
+      approval_status: string
+      personnel_id: string
+      jobsite_id: string
+      reason: string
+      daily_route_minutes: double
+      estimated_daily_route_cost: double
+      attrition_risk_cost: double
+      delay_risk_cost: double
+      no_show_risk_cost: double
+      crew_incompatibility_cost: double
+      robotics_suitability_reward: double
+  WasteFinding:
+    primaryKey: assignment_id
+    properties:
+      assignment_id: string
+      jobsite_id: string
+      assigned_personnel: string
+      assigned_commute_minutes: double
+      closer_qualified_worker: string
+      closer_commute_minutes: double
+      annualized_cost: double
+      reason: string
+
+linkTypes:
+  PersonnelAssignedToJobsite:
+    from: Personnel
+    to: Jobsite
+    via: DeploymentAssignment
+  RecommendationTargetsPersonnel:
+    from: DeploymentRecommendation
+    to: Personnel
+  RecommendationTargetsJobsite:
+    from: DeploymentRecommendation
+    to: Jobsite
+  WasteFindingReferencesAssignment:
+    from: WasteFinding
+    to: DeploymentAssignment

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>American Deployment Audit Packet</title>
+  <style>
+    :root {
+      --ink: #17212b;
+      --navy: #10243a;
+      --steel: #4d5c68;
+      --line: #d8d0c3;
+      --paper: #f7f2e8;
+      --card: #fffdf8;
+      --orange: #c8511d;
+      --green: #1f7a4f;
+      --gold: #9b7b34;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.45;
+    }
+    .shell { max-width: 1180px; margin: 0 auto; padding: 42px 26px 64px; }
+    .hero {
+      border: 1px solid var(--line);
+      background: linear-gradient(135deg, #fffdf8 0%, #f0e7d8 100%);
+      padding: 34px;
+      box-shadow: 0 18px 40px rgba(23, 33, 43, 0.10);
+    }
+    .eyebrow { color: var(--orange); font-weight: 800; letter-spacing: .08em; text-transform: uppercase; font-size: 12px; }
+    h1 { margin: 8px 0 10px; font-size: clamp(34px, 5vw, 64px); line-height: .94; letter-spacing: -0.03em; }
+    h2 { margin: 34px 0 14px; font-size: 24px; }
+    p { color: var(--steel); max-width: 760px; }
+    .grid { display: grid; gap: 14px; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 22px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 18px;
+      min-height: 118px;
+    }
+    .label { color: var(--steel); font-size: 13px; font-weight: 700; }
+    .value { margin-top: 12px; color: var(--navy); font-size: 30px; font-weight: 850; letter-spacing: -0.04em; }
+    .value.green { color: var(--green); }
+    .value.orange { color: var(--orange); }
+    .section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 24px;
+      margin-top: 18px;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td { padding: 11px 10px; border-bottom: 1px solid #e7dfd1; text-align: left; vertical-align: top; }
+    th { color: var(--navy); font-size: 12px; text-transform: uppercase; letter-spacing: .06em; }
+    .callout {
+      border-left: 5px solid var(--orange);
+      background: #fff7ed;
+      padding: 16px 18px;
+      margin-top: 18px;
+      font-weight: 760;
+    }
+    .fineprint { margin-top: 30px; font-size: 13px; color: #6e6a63; }
+    @media (max-width: 900px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 560px) { .grid { grid-template-columns: 1fr; } .hero, .section { padding: 20px; } }
+    </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">American Deployment Community Edition</div>
+      <h1>Dispatch waste audit packet</h1>
+      <p>Algorithm-first deployment intelligence for field-heavy operators. This packet replays baseline dispatch, runs constrained optimization, and produces integration-ready recommendations for dispatcher review.</p>
+      <div class="grid">
+        <div class="card"><div class="label">Baseline route burn</div><div class="value">203.8 hrs</div></div>
+        <div class="card"><div class="label">Optimized route burn</div><div class="value green">58.5 hrs</div></div>
+        <div class="card"><div class="label">Dispatch delta</div><div class="value orange">145.3 hrs</div></div>
+        <div class="card"><div class="label">Annualized route savings</div><div class="value green">$2,797,943</div></div>
+      </div>
+      <div class="callout">Your current deployment pattern burns 203.8 hrs/day in route burden. The optimizer recovers 71% under explicit constraints.</div>
+    </section>
+
+    <section class="section">
+      <h2>Top avoidable bad deployments</h2>
+      <table>
+        <thead><tr><th>Assigned worker</th><th>Job</th><th>Commute</th><th>Closer qualified option</th><th>Annualized hit</th><th>Reason</th></tr></thead>
+        <tbody><tr><td>Luke Hughes</td><td>Naples Restoration 19</td><td>143 min</td><td>Jack Romero</td><td>$85,381</td><td>Drove 143 minutes despite a qualified worker within 10 minutes.</td></tr>
+<tr><td>Nate Foster</td><td>Naples Utilities 44</td><td>131 min</td><td>Mia Sullivan</td><td>$78,432</td><td>Drove 131 minutes despite a qualified worker within 9 minutes.</td></tr>
+<tr><td>Jack Hayes</td><td>Naples Roofing 28</td><td>133 min</td><td>Grace Sullivan</td><td>$72,136</td><td>Drove 133 minutes despite a qualified worker within 21 minutes.</td></tr>
+<tr><td>Troy Foster</td><td>Bonita Springs / Estero Telecom/Fiber 49</td><td>112 min</td><td>Ava Romero</td><td>$64,387</td><td>Drove 112 minutes despite a qualified worker within 12 minutes.</td></tr>
+<tr><td>Cole Foster</td><td>Cape Coral Utilities 55</td><td>89 min</td><td>Grant Hayes</td><td>$52,602</td><td>Drove 89 minutes despite a qualified worker within 7 minutes.</td></tr>
+<tr><td>Luke Hughes</td><td>Lehigh Acres / Immokalee Electrical 35</td><td>92 min</td><td>Reed Carter</td><td>$51,067</td><td>Drove 92 minutes despite a qualified worker within 12 minutes.</td></tr>
+<tr><td>June Hayes</td><td>Cape Coral Commercial Construction 13</td><td>98 min</td><td>Nora Miller</td><td>$48,740</td><td>Drove 98 minutes despite a qualified worker within 22 minutes.</td></tr>
+<tr><td>Nora Walker</td><td>Fort Myers Commercial Construction 45</td><td>87 min</td><td>Reed Bennett</td><td>$48,009</td><td>Drove 87 minutes despite a qualified worker within 12 minutes.</td></tr></tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>Calibration gym</h2>
+      <p>Method: <strong>synthetic_risk_search</strong>. Weights were searched against synthetic Brain Layer risk because no real outcome labels were provided.</p>
+      <table>
+        <thead><tr><th>Trial</th><th>Policy cost</th><th>Solver</th><th>Commute</th><th>Retention</th><th>Urgency</th></tr></thead>
+        <tbody><tr><td>13</td><td>19,957</td><td>OPTIMAL</td><td>1.65</td><td>1.68</td><td>0.47</td></tr>
+<tr><td>12</td><td>20,099</td><td>OPTIMAL</td><td>1.48</td><td>0.91</td><td>0.57</td></tr>
+<tr><td>17</td><td>23,396</td><td>OPTIMAL</td><td>1.55</td><td>0.90</td><td>0.78</td></tr>
+<tr><td>7</td><td>23,899</td><td>OPTIMAL</td><td>1.23</td><td>1.20</td><td>0.35</td></tr>
+<tr><td>4</td><td>24,941</td><td>OPTIMAL</td><td>1.19</td><td>0.58</td><td>0.54</td></tr>
+<tr><td>3</td><td>26,021</td><td>OPTIMAL</td><td>1.54</td><td>0.58</td><td>1.11</td></tr></tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>Monday morning moves</h2>
+      <ol>
+        <li>Review the top route swaps before changing headcount.</li>
+        <li>Rebalance supervisors whose work is geographically scattered.</li>
+        <li>Fix constrained certifications before they block more jobs.</li>
+        <li>Use robotics or capture units on inspection-heavy sites to remove avoidable trips.</li>
+      </ol>
+    </section>
+
+    <p class="fineprint">Synthetic demo data and synthetic ML scores are not customer-proven savings or model accuracy. Customer-calibrated performance requires historical schedules, outcomes, dispatcher overrides, and time-based validation.</p>
+  </main>
+</body>
+</html>

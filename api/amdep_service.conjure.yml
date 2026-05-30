@@ -1,0 +1,44 @@
+types:
+  definitions:
+    default-package: com.americandeployment.api
+    objects:
+      DispatchAuditRequest:
+        fields:
+          workersCsvUri: string
+          jobsitesCsvUri: string
+          assignmentsCsvUri: optional<string>
+          assetsCsvUri: optional<string>
+          outputUri: string
+          calibrationTrials: integer
+      DispatchAuditResponse:
+        fields:
+          auditId: string
+          solverStatus: string
+          dispatchDeltaHoursPerDay: double
+          annualizedRouteSavings: double
+          summaryHtmlUri: string
+          recommendationCsvUri: string
+      RecommendationDecision:
+        fields:
+          recommendationId: string
+          decision: string
+          actor: string
+          reason: optional<string>
+          decidedAt: datetime
+
+services:
+  DispatchAuditService:
+    name: DispatchAuditService
+    package: com.americandeployment.api
+    endpoints:
+      runAudit:
+        http: POST /audits
+        args:
+          request: DispatchAuditRequest
+        returns: DispatchAuditResponse
+      recordDecision:
+        http: POST /recommendations/{recommendationId}/decision
+        args:
+          recommendationId: string
+          decision: RecommendationDecision
+        returns: boolean

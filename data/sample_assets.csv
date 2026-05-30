@@ -1,0 +1,49 @@
+asset_id,asset_kind,asset_type,home_region,capability,hourly_cost,cost_per_day,available,robot_ready
+A001,equipment,QA/QC inspection kit,Cape Coral,QA/QC inspection kit,57.24,0.0,True,False
+A002,equipment,laser scanner,Naples,laser scanner,33.64,0.0,True,False
+A003,vehicle,pickup truck,Sarasota-Punta Gorda,pickup truck,37.74,0.0,True,False
+A004,equipment,QA/QC inspection kit,Naples,QA/QC inspection kit,46.25,0.0,True,False
+A005,equipment,punchlist tablet set,Bonita-Estero,punchlist tablet set,40.57,0.0,True,False
+A006,equipment,laser scanner,Bonita-Estero,laser scanner,44.29,0.0,True,False
+A007,vehicle,pickup truck,Sarasota-Punta Gorda,pickup truck,32.57,0.0,True,False
+A008,equipment,punchlist tablet set,Sarasota-Punta Gorda,punchlist tablet set,41.41,0.0,True,False
+A009,vehicle,pickup truck,Sarasota-Punta Gorda,pickup truck,27.23,0.0,True,False
+A010,equipment,laser scanner,Bonita-Estero,laser scanner,44.46,0.0,True,False
+A011,equipment,punchlist tablet set,Naples,punchlist tablet set,39.23,0.0,True,False
+A012,equipment,laser scanner,Naples,laser scanner,11.19,0.0,True,False
+A013,vehicle,pickup truck,Fort Myers,pickup truck,23.72,0.0,True,False
+A014,equipment,temporary office kit,Naples,temporary office kit,33.72,0.0,True,False
+A015,equipment,QA/QC inspection kit,Fort Myers,QA/QC inspection kit,28.71,0.0,True,False
+A016,equipment,QA/QC inspection kit,Fort Myers,QA/QC inspection kit,66.47,0.0,True,False
+A017,equipment,punchlist tablet set,Cape Coral,punchlist tablet set,40.93,0.0,True,False
+A018,equipment,temporary office kit,Fort Myers,temporary office kit,36.81,0.0,True,False
+A019,vehicle,pickup truck,Naples,pickup truck,25.8,0.0,True,False
+A020,equipment,document control kit,Bonita-Estero,document control kit,40.32,0.0,True,False
+A021,equipment,progress camera kit,Fort Myers,progress camera kit,36.61,0.0,True,False
+A022,equipment,temporary office kit,Bonita-Estero,temporary office kit,42.09,0.0,True,False
+A023,equipment,document control kit,Naples,document control kit,56.18,0.0,True,False
+A024,equipment,laser scanner,Bonita-Estero,laser scanner,27.34,0.0,True,False
+A025,equipment,QA/QC inspection kit,Lehigh-Immokalee,QA/QC inspection kit,40.53,0.0,True,False
+A026,equipment,punchlist tablet set,Sarasota-Punta Gorda,punchlist tablet set,49.45,0.0,True,False
+A027,equipment,document control kit,Lehigh-Immokalee,document control kit,40.14,0.0,True,False
+A028,equipment,site tablet kit,Fort Myers,site tablet kit,43.21,0.0,True,False
+A029,equipment,laser scanner,Lehigh-Immokalee,laser scanner,39.39,0.0,True,False
+A030,equipment,layout station,Cape Coral,layout station,42.97,0.0,True,False
+A031,equipment,temporary office kit,Naples,temporary office kit,44.62,0.0,True,False
+A032,equipment,temporary office kit,Naples,temporary office kit,42.22,0.0,False,False
+A033,equipment,site tablet kit,Naples,site tablet kit,46.42,0.0,True,False
+A034,equipment,site tablet kit,Sarasota-Punta Gorda,site tablet kit,39.37,0.0,True,False
+A035,equipment,document control kit,Lehigh-Immokalee,document control kit,36.98,0.0,True,False
+A036,equipment,site tablet kit,Fort Myers,site tablet kit,57.08,0.0,True,False
+A037,equipment,laser scanner,Bonita-Estero,laser scanner,43.71,0.0,True,False
+A038,equipment,site tablet kit,Sarasota-Punta Gorda,site tablet kit,37.1,0.0,True,False
+A039,equipment,QA/QC inspection kit,Lehigh-Immokalee,QA/QC inspection kit,31.13,0.0,True,False
+A040,equipment,layout station,Fort Myers,layout station,42.44,0.0,True,False
+R001,robotic,progress capture drone,Naples,inspection,0.0,221.75,True,True
+R002,robotic,autonomous layout rover,Bonita-Estero,layout,0.0,338.3,True,True
+R003,robotic,inspection drone,Fort Myers,inspection,0.0,421.15,True,True
+R004,robotic,laser scan rover,Sarasota-Punta Gorda,progress,0.0,237.53,True,True
+R005,robotic,site camera tower,Sarasota-Punta Gorda,progress,0.0,265.37,True,True
+R006,robotic,concrete scan robot,Cape Coral,progress,0.0,190.32,True,True
+R007,robotic,thermal envelope scanner,Lehigh-Immokalee,progress,0.0,335.11,True,True
+R008,robotic,turnover capture unit,Fort Myers,progress,0.0,380.69,True,True

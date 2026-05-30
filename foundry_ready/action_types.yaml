@@ -1,0 +1,31 @@
+actionTypes:
+  approve_recommendation:
+    description: Approve an AmDep deployment recommendation for downstream writeback.
+    inputs:
+      recommendation_id: string
+      approver: string
+      approved_at: datetime
+  reject_recommendation:
+    description: Reject a recommendation while preserving the dispatcher's reason.
+    inputs:
+      recommendation_id: string
+      approver: string
+      rejection_reason: string
+      rejected_at: datetime
+  override_assignment:
+    description: Capture a human override that becomes future training data.
+    inputs:
+      recommendation_id: string
+      selected_personnel_id: string
+      selected_jobsite_id: string
+      override_reason: string
+      overridden_by: string
+      overridden_at: datetime
+  mark_operationally_infeasible:
+    description: Mark a recommendation as impossible due to real-world constraints not yet represented in the ontology.
+    inputs:
+      recommendation_id: string
+      constraint_name: string
+      notes: string
+      marked_by: string
+      marked_at: datetime

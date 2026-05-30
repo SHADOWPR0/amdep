@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "american-deployment"
+version = "0.1.0"
+description = "Algorithm-first dispatch audit and deployment optimization engine for field-heavy operators."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "SHADOWPR0" }]
+dependencies = [
+  "pandas>=2.2",
+  "numpy>=1.26",
+  "pydantic>=2.7",
+  "scikit-learn>=1.4",
+  "ortools>=9.10",
+  "networkx>=3.2",
+  "joblib>=1.3",
+]
+
+[project.scripts]
+amdep-audit = "amdep.run_audit:main"
+amdep-web-demo = "amdep.web_demo:main"
+
+[tool.setuptools]
+packages = ["amdep", "amdep.integrations"]

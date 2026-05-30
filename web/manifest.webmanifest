@@ -1,0 +1,17 @@
+{
+  "name": "AMDEP Project Staff Command Center",
+  "short_name": "AMDEP",
+  "description": "Cross-platform demo command center for American Deployment project-staff optimization.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4f1ea",
+  "theme_color": "#171b20",
+  "icons": [
+    {
+      "src": "./assets/amdep-mark.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
