@@ -158,6 +158,8 @@ The demo proves the workflow:
 
 For a Kyle-facing explanation of the sample data, model/optimizer layer, economic methodology, and pilot posture, see [docs/DEMO_METHODOLOGY_AND_DEPLOYMENT.md](docs/DEMO_METHODOLOGY_AND_DEPLOYMENT.md).
 
+For the local, FDE-led intake pilot package, see [docs/FIELD_KIT_MVP.md](docs/FIELD_KIT_MVP.md) and [docs/FIELD_KIT_MODEL_CARD.md](docs/FIELD_KIT_MODEL_CARD.md).
+
 ## What It Does Not Prove
 
 This repository uses randomized commercial GC staffing data. Modeled impact is directional until validated against historical assignments, schedules, outcomes, overrides, and job-cost records.

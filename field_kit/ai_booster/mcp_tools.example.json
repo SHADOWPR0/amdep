@@ -1,0 +1,18 @@
+{
+  "server_name": "amdep-field-kit",
+  "description": "Local AMDEP Field Kit tool surface for contractor staffing intake.",
+  "tools": [
+    "list_intake_files",
+    "classify_intake_files",
+    "map_columns",
+    "write_normalized_bundle",
+    "run_local_staffing_audit",
+    "open_local_command_center",
+    "summarize_data_gaps"
+  ],
+  "safety": {
+    "default_mode": "read_only",
+    "writeback_requires_explicit_customer_approval": true,
+    "customer_files_stay_local": true
+  }
+}

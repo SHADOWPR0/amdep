@@ -23,6 +23,7 @@ dependencies = [
 [project.scripts]
 amdep-audit = "amdep.run_audit:main"
 amdep-web-demo = "amdep.web_demo:main"
+amdep-field-kit = "amdep.field_kit:main"
 
 [tool.setuptools]
 packages = ["amdep", "amdep.integrations"]

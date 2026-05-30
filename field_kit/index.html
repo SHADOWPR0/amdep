@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AMDEP Field Kit</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="titlebar">
+      <div>
+        <strong>AMDEP FIELD KIT</strong>
+        <span>LOCAL READ-ONLY INTAKE</span>
+      </div>
+      <small id="workspaceLabel">Loading workspace</small>
+    </header>
+
+    <section class="panel">
+      <div class="panel-head">
+        <span>STEP 1</span>
+        <h1>Tell AMDEP how this contractor currently runs staffing.</h1>
+      </div>
+      <div class="system-grid" id="systemGrid">
+        <label><input type="checkbox" value="Workday / HRIS"> Workday / HRIS</label>
+        <label><input type="checkbox" value="ADP / payroll"> ADP / payroll</label>
+        <label><input type="checkbox" value="Procore"> Procore</label>
+        <label><input type="checkbox" value="Autodesk Construction Cloud"> Autodesk Construction Cloud</label>
+        <label><input type="checkbox" value="Sage / ERP"> Sage / ERP</label>
+        <label><input type="checkbox" value="HCSS"> HCSS</label>
+        <label><input type="checkbox" value="Viewpoint / Trimble"> Viewpoint / Trimble</label>
+        <label><input type="checkbox" value="CMiC / Foundation"> CMiC / Foundation</label>
+        <label><input type="checkbox" value="SharePoint / OneDrive"> SharePoint / OneDrive</label>
+        <label><input type="checkbox" value="Excel / CSV"> Excel / CSV</label>
+        <label><input type="checkbox" value="Teams / Outlook"> Teams / Outlook</label>
+        <label><input type="checkbox" value="Whiteboard / manual"> Whiteboard / manual</label>
+      </div>
+      <div class="form-row">
+        <label>
+          Staffing owner
+          <input id="ownerInput" placeholder="Ops manager, project exec, scheduler...">
+        </label>
+        <label>
+          Notes
+          <input id="notesInput" placeholder="Anything weird about how they staff jobs">
+        </label>
+      </div>
+      <button class="button" id="saveProfileButton">Save intake profile</button>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <span>STEP 2</span>
+        <h2>Drop copied exports here.</h2>
+      </div>
+      <div class="dropzone" id="dropzone">
+        <strong>Drop Excel / CSV files</strong>
+        <small>PDF/manual notes can stay in the workspace for reference, but the audit needs tabular exports. No production writeback. No frontier API required.</small>
+        <input id="fileInput" type="file" multiple>
+      </div>
+      <div class="button-row">
+        <button class="button primary" id="uploadButton">Upload selected files</button>
+        <button class="button" id="analyzeButton">Analyze intake</button>
+        <button class="button primary" id="runButton">Run local audit</button>
+      </div>
+    </section>
+
+    <section class="dashboard">
+      <article class="panel score-panel">
+        <div class="panel-head">
+          <span>READINESS</span>
+          <h2>Data readiness</h2>
+        </div>
+        <strong id="scoreValue">--</strong>
+        <small id="scoreStatus">Waiting for files</small>
+        <ul id="scoreNotes"></ul>
+      </article>
+
+      <article class="panel">
+        <div class="panel-head">
+          <span>FILES</span>
+          <h2>Detected data</h2>
+        </div>
+        <div id="fileList" class="file-list"></div>
+      </article>
+    </section>
+
+    <section class="panel output-panel">
+      <div class="panel-head">
+        <span>OUTPUT</span>
+        <h2>Local deliverables</h2>
+      </div>
+      <div id="outputBox" class="output-box">Run an intake to generate local outputs.</div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <span>MODEL</span>
+        <h2>Model details and weights</h2>
+      </div>
+      <div class="model-grid">
+        <div class="output-box">
+          <strong>What runs locally</strong>
+          <ul id="modelFamilies"></ul>
+          <a href="/docs/FIELD_KIT_MODEL_CARD.md" target="_blank" rel="noreferrer">Open model card</a>
+        </div>
+        <div class="output-box">
+          <strong>Default policy weights</strong>
+          <div id="defaultWeights" class="weight-list"></div>
+        </div>
+        <div class="output-box">
+          <strong>Latest audit weights</strong>
+          <div id="latestWeights">Run an audit to generate recommended weights.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>

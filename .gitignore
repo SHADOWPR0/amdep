@@ -10,5 +10,6 @@ __pycache__/
 models/*.joblib
 reports/demo_audit/
 reports/customer_*/
+field_kit_workspace/
 dist/
 *.log
