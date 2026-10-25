@@ -14,7 +14,7 @@ It is not a hosted SaaS deployment and it is not meant to be handed to a contrac
 - Local audit runner.
 - Local executive audit packet.
 - Local command-center UI using the same AMDEP interface pattern as the demo.
-- AI booster instructions for Codex, Claude Code, Claude Cowork, Cursor, Copilot, or similar tools.
+- AI booster instructions for OpenAI tools, Claude Code, Claude Cowork, Cursor, Copilot, or similar tools.
 - Model card explaining features, synthetic risk models, optimizer weights, calibration, and caveats.
 
 ## What It Does Not Require
@@ -50,7 +50,7 @@ Internal IT provides read-only exports from systems such as Workday, ADP, Procor
 
 ### Agentic / enterprise-AI shop
 
-If the customer already has Codex, Claude Code, Claude Cowork, Copilot, Gemini, or another approved enterprise AI tool connected to their environment, the `field_kit/ai_booster/` instructions can be dropped into that environment. The agent maps data into the AMDEP canonical bundle and runs the same local audit, still with no writeback by default.
+If the customer already has OpenAI tools, Claude Code, Claude Cowork, Copilot, Gemini, or another approved enterprise AI tool connected to their environment, the `field_kit/ai_booster/` instructions can be dropped into that environment. The agent maps data into the AMDEP canonical bundle and runs the same local audit, still with no writeback by default.
 
 ## Model And Weights
 
